@@ -23,8 +23,8 @@ namespace _3._1FoldAndSum
          //If the input array has 8 elements with the "for loop" we are folding the elements on 1st/2nd positions,
          //and the last two elements which are on 7th/8th positions.
             {
-                leftSum[i] = inputArray[(inputArray.Length / 4) - 1 - i]; //Reversing the first two elements.
-                rightSum[i] = inputArray[inputArray.Length - 1 - i]; //Reversing the last two elements.
+                leftSum[i] = inputArray[(inputArray.Length / 4) - i - 1]; //Reversing the first two elements.
+                rightSum[i] = inputArray[inputArray.Length - i - 1]; //Reversing the last two elements.
             }
 
             for (int i = 0; i < (inputArray.Length / 4); i++)

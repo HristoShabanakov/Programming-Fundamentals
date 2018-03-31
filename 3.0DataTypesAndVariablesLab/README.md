@@ -105,8 +105,6 @@ Write a program to read an integer **n** and print all **triples** of the first 
 #### Hints
 - Perform 3 nested loops from **0** to **n-1**. For each number num print its corresponding Latin letter as follows.
 
-
-
 ## 07.Greeting
 
 #### Problem Description
@@ -119,6 +117,31 @@ Write a program that enters **first name, last name** and **age** and prints "He
 |---|---|
 |Svetlin <br/> Nakov <br/> 25 |Hello, Svetlin Nakov. You are 25 years old.|
 
+## 08.Refactor Volume of Pyramid
+
+#### Problem Description
+
+You are given a working code that finds the volume of a pyramid. However, you should consider that the variables exceed their optimum span and have improper naming. Also, search for variables that have multiple purpose.
+
+Code Sample
+
+<br>double dul, sh, V = 0;<br> Console.Write("Length: ");<br> dul = double.Parse(Console.ReadLine());<br> Console.Write("Width: ");<br> sh = double.Parse(Console.ReadLine());<br> Console.Write("Heigth: ");<br> V = double.Parse(Console.ReadLine());<br> V = (dul + sh + V) / 3;<br> Console.WriteLine("Pyramid Volume: {0:F2}", V);<br>
 
 
 
+## 09.Refactor Special Numbers
+
+#### Problem Description
+
+You are given a working code that is a solution to Problem 5. Special Numbers. However, the variables are improperly named, declared before they are needed and some of them are used for multiple things. Without using your previous solution, modify the code so that it is easy to read and understand.
+
+
+Code Sample<br>
+
+int kolkko = int.Parse(Console.ReadLine());<br> int obshto = 0; int takova = 0; bool toe = false;<br> for (int ch = 1; ch <= kolkko; ch++)<br> 
+{<br>
+takova = ch;<br> while (ch > 0)<br> {
+obshto += ch % 10;<br> ch = ch / 10;<br>
+}<br>
+toe = (obshto == 5) || (obshto == 7) || (obshto == 11);<br> Console.WriteLine($"{takova} -> {toe}");<br> obshto = 0;<br> ch = takova;<br>
+}

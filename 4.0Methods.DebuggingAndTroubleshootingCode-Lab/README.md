@@ -91,7 +91,19 @@ Draw at the console a filled square of size n like in the example: n=4
 > 3.	Create the method which will print the middle rows. Well, of course, you should probably name it "PrintMiddleRow"
 > 4.	Use the methods that you've just created to draw a square
 
-## 05.Calculate Triangle Area
+## 05.Temperature Conversion
+Create a method that converts a temperature from Fahrenheit to Celsius. Format the result to the 2nd decimal point.<br> Use the formula: (fahrenheit - 32) * 5 / 9.
+
+#### Examples 
+
+|**Input**|**Output**|
+|---|---|
+|95 |35.00|
+|33.8|1.00|
+|-40|-40.00|
+
+
+## 06.Calculate Triangle Area
 Create a method that calculates and returns the area of a triangle by given base and height
 
 #### Examples 
@@ -105,7 +117,7 @@ Create a method that calculates and returns the area of a triangle by given base
 > 2.	Create a method, but this time instead of typing "static void" before its name, type "static double" as this will make it to return a value of type double:
 > 3.	Invoke the method in the main and save the return value in a new variable:
 
-## 06.Math Power
+## 07.Math Power
 Create a method that calculates and returns the value of a number raised to a given power
 
 #### Examples 
@@ -120,7 +132,7 @@ Create a method that calculates and returns the value of a number raised to a gi
 > 2.	Create a method which will have two parameters - the number and the power, and will return a result of type double:
 > 3.	Print the result
 
-## 07.Greater of Two Values
+## 08.Greater of Two Values
 You are given two values of the same type as input. The values can be of type int, char of string. Create a method GetMax() that returns the greater of the two value
 
 #### Examples 
@@ -139,7 +151,7 @@ You are given two values of the same type as input. The values can be of type in
 > You need to use the method "CompareTo()", which returns an integer value (greater than zero if the compared object is greater, less than zero if the compared object is lesser and zero if the two objects are equal.
 > 5.	The last step is to read the input, use appropriate variables and call the GetMax() from your Main(): 
 
-## 08.Multiply Evens by Odds
+## 09.Multiply Evens by Odds
 Create a program that reads an integer number and multiplies the sum of all its even digits by the sum of all its odd digits.
 
 #### Examples 
@@ -156,7 +168,7 @@ Create a program that reads an integer number and multiplies the sum of all its 
 > 4.	Do the same for the method that will sum even digits
 > 5.	As you test your solution you may notice that it doesn't work for negative numbers. Following the program execution line by line, find and fix the bug (hint: you can use Math.Abs())
 
-## 09.Debug the Code: Holidays Between Two Dates
+## 10.Debug the Code: Holidays Between Two Dates
 You are assigned to find and fix the bugs in an existing piece of code, using the Visual Studio debugger. You should trace the program execution to find the lines of code that produce incorrect or unexpected results.
 You are given a program (existing source code) that aims to count the non-working days between two dates given in format day.month.year (e.g. between 1.05.2015 and 15.05.2015 there are 5 non-working days – Saturday and Sunday).
 
@@ -196,7 +208,7 @@ class HolidaysBetweenTwoDates
 > #### Hints
 > There are 4 mistakes in the code. You’ve got to use the debugger to find them and fix them. After you do that, submit your fixed code in the judge contest: https://judge.softuni.bg/Contests/Practice/Index/304#8
 
-## 10.Price Change Alert
+## 11.Price Change Alert
 You are assigned to rework a given piece of code which is working without bugs but is not properly formatted. 
 The given program tracks stock prices and gives updates about the significance in each price change. Based on the significance, there are four kind of changes: no change at all (price is equal to the previous), minor (difference is below the significance threshold), price up and price down. 
 

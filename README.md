@@ -13,7 +13,7 @@ The **“Programming Fundamentals”** course extends the previously gained basi
 5. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/2.1C%23ConditionalStatementsAndLoopsExercises" > C# Conditional Statements and Loops - Exercises</a> 
 6. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/2.2C%23ConditionalStatementsAndLoopsMoreExercises" > C# Conditional Statements and Loops - More Exercises</a>
 7. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/3.0DataTypesAndVariablesLab" > Data Types and Variables - Lab</a>
-8. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/3.1DatTypesAndVariablesExercises" > Data Types and Variables - Exercises</a>
+8. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/3.1DatTypesAndVariables-Exercises" > Data Types and Variables - Exercises</a>
 9. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/4.0Methods.DebuggingAndTroubleshootingCode-Lab" > Methods. Debugging and Troubleshooting Code - Lab</a>
 10. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/4.1Methods.DebuggingAndTroubleshootingCode-Exercises" > Methods. Debugging and Troubleshooting Code - Exercises</a>
 11. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/5.0ArraysLab" > Arrays - Lab </a>

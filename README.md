@@ -18,6 +18,7 @@ The **“Programming Fundamentals”** course extends the previously gained basi
 10. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/4.1Methods.DebuggingAndTroubleshootingCode-Exercises" > Methods. Debugging and Troubleshooting Code - Exercises</a>
 11. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/5.0ArraysLab" > Arrays - Lab </a>
 12. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/5.1ArraysExercises" > Arrays - Exercises </a>
-13. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/6.0ListLab" > Lists - Lab </a>
-14. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/6.1ListsExercises" > Lists - Exercises </a>
-15. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/7.0DictionariesLambdaExpressionsАndLINQ" > Dictionaries Lambda Expressions and LINQ </a>
+13. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/5.2ArraysMoreExercises" > Arrays - More Exercises </a>
+14. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/6.0ListLab" > Lists - Lab </a>
+15. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/6.1ListsExercises" > Lists - Exercises </a>
+16. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/7.0DictionariesLambdaExpressionsАndLINQ" > Dictionaries Lambda Expressions and LINQ </a>

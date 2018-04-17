@@ -21,4 +21,5 @@ The **“Programming Fundamentals”** course extends the previously gained basi
 13. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/5.2ArraysMoreExercises" > Arrays - More Exercises </a>
 14. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/6.0ListLab" > Lists - Lab </a>
 15. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/6.1ListsExercises" > Lists - Exercises </a>
-16. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/7.0DictionariesLambdaExpressionsАndLINQ" > Dictionaries Lambda Expressions and LINQ </a>
+16. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/7.0DictionariesLambdaExpressionsАndLINQ" > Dictionaries, Lambda Expressions and LINQ - Lab </a>
+17. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/7.1DictionariesLambdaExpressionsАndLINQ-Exercises" > Dictionaries, Lambda Expressions and LINQ - Exercises </a>

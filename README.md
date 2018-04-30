@@ -24,3 +24,4 @@ The **“Programming Fundamentals”** course extends the previously gained basi
 16. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/7.0DictionariesLambdaExpressionsАndLINQ" > Dictionaries, Lambda Expressions and LINQ - Lab </a>
 17. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/7.1DictionariesLambdaExpressionsАndLINQ-Exercises" > Dictionaries, Lambda Expressions and LINQ - Exercises </a>
 18. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/8.0ObjectsAndClassesLab" > Objects and Classes - Lab </a>
+19. <a href="https://github.com/HristoShabanakov/Programming-Fundamentals/tree/master/8.1ObjectsAndClassesExercises" > Objects and Classes - Exercises </a>

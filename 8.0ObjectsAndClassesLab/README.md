@@ -71,6 +71,7 @@ Write a method to calculate the distance between two points **p1 {x1, y1}** and 
 	c2 = a2 + b2 (Pythagorean theorem)
 	Distance = c = √(a^2+b^2 )
 > - You can use Math.Sqrt(number) method for calculating a square root.
+![Not found](https://raw.githubusercontent.com/HristoShabanakov/Programming-Fundamentals/master/8.1ObjectsAndClassesExercises/images/15.png)
 
 ## 05.Closest Two Points
 Write a program to read **n** points and find the **closest two** of them.
@@ -88,9 +89,9 @@ The **input** holds the number of points **n** and **n** lines, each holding a p
 
 | **Input**| **Output**|**Visualization**|**Comments**|
 |---|---|---|---|
-|4 <br/> 3 4 <br/> 6 8 <br/> 2 5 <br/> -1 3|1.414 <br/> (3, 4) <br/> (2, 5)| ![Not fount](/Programmin%20Fundamentals/Homeworks%20and%20Labs/images/obj16.png)|The closest two points are {3, 4} and {2, 5} at distance 1.4142135623731 ≈ 1.414.|
-|3 <br/> 12 -30 <br/> 6 18 <br/> 6 18|0.000 <br/> (6, 18) <br/> (6, 18)|![Not fount](/Programmin%20Fundamentals/Homeworks%20and%20Labs/images/obj17.png)|Two of the points have the same coordinates {6, 18}, so the distance between them is 0.|
-|3 <br/> 1 1 <br/> 2 2 <br/> 3 3|1.414 <br/> (1, 1) <br/> (2, 2)|![Not fount](/Programmin%20Fundamentals/Homeworks%20and%20Labs/images/obj18.png)|The pairs of points {{1, 1}, {2, 2}} and {{2,2}, {3,3}} stay at the same distance, but the first pair is {{1, 1}, {2, 2}}. The distance between them is 1.4142135623731 ≈ 1.414.|
+|4 <br/> 3 4 <br/> 6 8 <br/> 2 5 <br/> -1 3|1.414 <br/> (3, 4) <br/> (2, 5)|![Not found](https://raw.githubusercontent.com/HristoShabanakov/Programming-Fundamentals/master/8.1ObjectsAndClassesExercises/images/16.png)|The closest two points are {3, 4} and {2, 5} at distance 1.4142135623731 ≈ 1.414.|
+|3 <br/> 12 -30 <br/> 6 18 <br/> 6 18|0.000 <br/> (6, 18) <br/> (6, 18)|![Not found](https://raw.githubusercontent.com/HristoShabanakov/Programming-Fundamentals/master/8.1ObjectsAndClassesExercises/images/17.png)|Two of the points have the same coordinates {6, 18}, so the distance between them is 0.|
+|3 <br/> 1 1 <br/> 2 2 <br/> 3 3|1.414 <br/> (1, 1) <br/> (2, 2)|![Not found](https://raw.githubusercontent.com/HristoShabanakov/Programming-Fundamentals/master/8.1ObjectsAndClassesExercises/images/18.png)|The pairs of points {{1, 1}, {2, 2}} and {{2,2}, {3,3}} stay at the same distance, but the first pair is {{1, 1}, {2, 2}}. The distance between them is 1.4142135623731 ≈ 1.414.|
 
 > #### Hints
 > - Use the **class Point** you created in the previous task.
@@ -106,8 +107,8 @@ The input is given as two lines, each holding a rectangle, described by 4 intege
 
 | **Input**| **Output**|**Visualization**|**Comments**|
 |---|---|---|---|
-|4 -3 6 4 <br/> 2 -3 10 6|Inside|![Not fount](/Programmin%20Fundamentals/Homeworks%20and%20Labs/images/obj19.png)|The first rectangle stays inside the second.|
-|2 -3 10 6 <br/> 4 -5 6 10| Not inside| ![Not fount](/Programmin%20Fundamentals/Homeworks%20and%20Labs/images/obj20.png)|The rectangles intersect, no the first is not inside the second.|
+|4 -3 6 4 <br/> 2 -3 10 6|Inside|![Not found](https://raw.githubusercontent.com/HristoShabanakov/Programming-Fundamentals/master/8.1ObjectsAndClassesExercises/images/19.png)|The first rectangle stays inside the second.|
+|2 -3 10 6 <br/> 4 -5 6 10| Not inside| ![Not found](https://raw.githubusercontent.com/HristoShabanakov/Programming-Fundamentals/master/8.1ObjectsAndClassesExercises/images/20.png)|The rectangles intersect, no the first is not inside the second.|
 
 > #### Hints
 > - Create a class **Rectangle** holding properties **Top, Left, Width** and **Height**.

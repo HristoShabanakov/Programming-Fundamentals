@@ -36,7 +36,17 @@ class AverageStudentGrades
 
         foreach (var pair in students)
         {
-            Console.WriteLine($"{pair.Key} -> {string.Join(" ",pair.Value)} (avg: {pair.Value.Average():f2})");
+            var name = pair.Key;
+            var studentsGrades = pair.Value;
+            var average = pair.Value.Average();
+
+            Console.Write($"{name}->");
+            foreach (var grade in studentsGrades)
+            {
+                Console.Write($"{grade:f2}");
+
+                Console.WriteLine($"(avg:{average:f2})");
+            }
         }
     }
 }

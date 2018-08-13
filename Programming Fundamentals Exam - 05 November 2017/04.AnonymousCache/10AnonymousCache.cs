@@ -10,9 +10,9 @@ class AnonymousCache
     static void Main()
     {
         string input = Console.ReadLine();
-        Dictionary<string, Dictionary<string, int>> dataBase = new Dictionary<string, Dictionary<string, int>>();
-        Dictionary<string, Dictionary<string, int>> cache = new Dictionary<string, Dictionary<string, int>>();
-        while (input != "thetinggoesskrr")
+        Dictionary<string, Dictionary<string, long>> dataBase = new Dictionary<string, Dictionary<string, long>>();
+        Dictionary<string, Dictionary<string, long>> cache = new Dictionary<string, Dictionary<string, long>>();
+        while (input != "thetinggoesskrra")
         {
             string[] info = input.Split(new char[] { '-', '>', ' ', '|' }, StringSplitOptions.RemoveEmptyEntries).ToArray();
             //With the lenght of the input we know how many words are given to us 1 or 3.
@@ -21,7 +21,7 @@ class AnonymousCache
                 string set = info[0];
                 if (!cache.ContainsKey(set))
                 {
-                    Dictionary<string, int> current = new Dictionary<string, int>();
+                    Dictionary<string, long> current = new Dictionary<string, long>();
                     dataBase.Add(set, current);
                 }
                 else
@@ -30,11 +30,10 @@ class AnonymousCache
                     cache.Remove(set);
                 }
             }
-
             else
             {
                 string key = info[0];
-                int size = int.Parse(info[1]);
+                long size = long.Parse(info[1]);
                 string set = info[2];
                 if (dataBase.ContainsKey(set))
                 {
@@ -52,7 +51,7 @@ class AnonymousCache
                 {
                     if (!cache.ContainsKey(set))
                     {
-                        Dictionary<string, int> current = new Dictionary<string, int>();
+                        Dictionary<string, long> current = new Dictionary<string, long>();
                         current.Add(key, size);
                         cache.Add(set, current);
                     }
@@ -68,7 +67,6 @@ class AnonymousCache
                         }
                     }
                 }
-
             }
             input = Console.ReadLine();
         }

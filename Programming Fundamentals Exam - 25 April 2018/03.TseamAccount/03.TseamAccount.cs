@@ -8,44 +8,49 @@ class TseamAccount
     static void Main()
     {
         List<string> input = Console.ReadLine().Split(' ').ToList();
-        string[] commands = Console.ReadLine().Split(' ').ToArray();
 
-        while (commands[0] != "Play!")
+        while (true)
         {
-
+            string[] commands = Console.ReadLine().Split(' ').ToArray();
+            if (commands[0] == "Play!")
+            {
+                break;
+            }
+            //If you receive Install command, you should add the game at last position in the account, 
+            //but only if it isn`t installed already.
             if (commands[0] == "Install")
             {
-                string game = commands[1];
-                if (!input.Contains(game))
+                
+                if (!input.Contains(commands[1]))
                 {
-                    input.Add(game);
+                    input.Add(commands[1]);
                 }
             }
-
-            else if (commands[0]== "Uninstall")
+            //If you receive Uninstall command, delete the game if it exists.
+            if (commands[0]== "Uninstall")
             {
-                string game = commands[1];
-                if (input.Contains(game))
+               
+                if (input.Contains(commands[1]))
                 {
-                    input.Remove(game);
+                    input.Remove(commands[1]);
                 }
             }
-
-            else if(commands[0] == "Update")
+            //If you receive Update command, you should update the game if it exists and place it on last position.
+            if (commands[0] == "Update")
             {
-                string game = commands[1];
-                if (input.Contains(game))
+                
+                if (input.Contains(commands[1]))
                 {
-                    input.Remove(game);
-                    input.Add(game);
+                    input.Remove(commands[1]);
+                    input.Add(commands[1]);
                 }
             }
-
-            else if(commands[0] == "Expansion")
+            //If you receive Expansion command, you should check if the game exists
+            //and insert after it the expansion in the following format: "{game}:{expansion}";
+            if (commands[0] == "Expansion")
             {
-                string game = commands[1];
                 string Format;
-                string[] Expansion = input[1].Split('-').Select(p => p.Trim()).ToArray();
+                string[] Expansion = commands[1].Split('-').Select(p => p.Trim()).ToArray();
                 
                 if (input.Contains(Expansion[0]))
                 {
@@ -54,15 +59,16 @@ class TseamAccount
 
                     for (int i = 0; i < input.Count; i++)
                     {
-                        index = i;
-                        break;
+                        if (input[i] == Expansion[0])
+                        {
+                            index = i;
+                            break;
+                        }
                     }
                     input.Insert(index + 1, Format);
                 }
             }
-            commands = Console.ReadLine().Split(' ').ToArray();
         }
-
         Console.WriteLine(string.Join(" ",input));
     }
 }

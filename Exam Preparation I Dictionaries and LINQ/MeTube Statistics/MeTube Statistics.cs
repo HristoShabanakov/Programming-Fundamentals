@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 class Program
 {
     static void Main()
@@ -15,40 +14,37 @@ class Program
 
         while ((input = Console.ReadLine()) != "stats time")
         {
-            string[] info = input.Split(new string[] { "-", ":" }, StringSplitOptions.RemoveEmptyEntries).ToArray();
+            string[] info = input.Split(new string[] { "-" }, StringSplitOptions.RemoveEmptyEntries).ToArray();
 
-            string videoName = info[0];
+            string[] data = info[0].Split(':');
 
-            if (info[0] == "like" || info[0] == "dislike")
+            if (data[0] == ("like"))
             {
-                if (info[0] == "like")
-                {
-                    string video = info[1];
-                    int like = 0;
-                    if (!likes.ContainsKey(video))
-                    {
-                        likes.Add(video, like);
-                        likes[video] += 1;
-                    }
-                    else
-                    {
-                        likes[video] += 1;
-                    }
+                string video = data[1];
+                int like = 0;
 
+                if (!likes.ContainsKey(video))
+                {
+                    likes.Add(video, like);
+                    likes[video] += 1;
                 }
-
-                else if (info[0] == "dislike")
+                else
                 {
-                    string video = info[1];
-
-                    if (likes.ContainsKey(video))
-                    {
-                        likes[video] -= 1;
-                    }
+                    likes[video] += 1;
                 }
             }
+            else if (data[0] == "dislike")
+            {
+                string video = data[1];
+                if (likes.ContainsKey(video))
+                {
+                    likes[video] -= 1;
+                }
+            }
+
             else
             {
+                string videoName = info[0];
                 int views = int.Parse(info[1]);
 
                 if (!videos.ContainsKey(videoName))
@@ -58,6 +54,12 @@ class Program
                 else
                 {
                     videos[videoName] += views;
+
+                }
+
+                if (!likes.ContainsKey(videoName))
+                {
+                    likes[videoName] = 0;
                 }
             }
         }
@@ -67,15 +69,23 @@ class Program
         {
             foreach (var pair in likes.OrderByDescending(x => x.Value))
             {
-                Console.WriteLine($"{pair.Key} -  views {string.Join(" ", pair.Value)} likes");
+                foreach (var key in videos.OrderByDescending(x => x.Value))
+                {
+
+                }
+                Console.WriteLine(($"{pair.Key} - {videos[pair.Key]} views - {string.Join(" ", pair.Value)} likes"));
             }
         }
         else if (input == "by views")
         {
             foreach (var pair in videos.OrderByDescending(x => x.Value))
             {
-                Console.WriteLine($"{pair.Key} - {string.Join(" ", pair.Value)} views - ");
-                
+                foreach (var like in likes.OrderByDescending(x => x.Value))
+                {
+
+                }
+                Console.WriteLine($"{pair.Key} - {string.Join(" ", pair.Value)} views - {likes[pair.Key]} likes");
+
             }
         }
     }

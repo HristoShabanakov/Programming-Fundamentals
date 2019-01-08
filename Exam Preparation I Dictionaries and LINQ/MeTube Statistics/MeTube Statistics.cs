@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 class Program
 {
@@ -69,23 +67,14 @@ class Program
         {
             foreach (var pair in likes.OrderByDescending(x => x.Value))
             {
-                foreach (var key in videos.OrderByDescending(x => x.Value))
-                {
-
-                }
-                Console.WriteLine(($"{pair.Key} - {videos[pair.Key]} views - {string.Join(" ", pair.Value)} likes"));
+                Console.WriteLine(($"{pair.Key} - {videos[pair.Key]} views - {pair.Value} likes"));
             }
         }
         else if (input == "by views")
         {
             foreach (var pair in videos.OrderByDescending(x => x.Value))
             {
-                foreach (var like in likes.OrderByDescending(x => x.Value))
-                {
-
-                }
-                Console.WriteLine($"{pair.Key} - {string.Join(" ", pair.Value)} views - {likes[pair.Key]} likes");
-
+                Console.WriteLine($"{pair.Key} - {pair.Value} views - {likes[pair.Key]} likes");
             }
         }
     }
